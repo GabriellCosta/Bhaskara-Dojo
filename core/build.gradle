@@ -1,0 +1,12 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    testImplementation group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+
+
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
